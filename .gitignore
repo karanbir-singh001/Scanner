@@ -1,7 +1,9 @@
+// THIS TOOL IS WRITTEN IN TYPESCRIPT TO SCAN ALL OPEN PORTS IN LESS THAN ONE MINUTE
+
 import net from 'net';
 import async from 'async';
 
-const { VMIP = '127.0.0.1', PORTS = '1-65535' } = process.env;
+const { VMIP = '127.0.0.1', PORTS = '1-65535' } = process.env; //change the i.p
 const MAX_SCANS = 4096;
 const SCAN_HOST = VMIP;
 const TIMEOUT = 2000;
